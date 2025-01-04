@@ -13,7 +13,9 @@ AddEventHandler("OnPluginStart", function (event)
             for i = 1, playermanager:GetPlayerCap() do
                 local pl = GetPlayer(i-1)
                 if pl then
-                    table.insert(playersname, pl:CBasePlayerController().PlayerName)
+                    if pl:CBasePlayerController():IsValid() then
+                        table.insert(playersname, pl:CBasePlayerController().PlayerName)
+                    end
                 end
             end
             data.general_log.fields[3].value = "```\n" .. table.concat(playersname, "\n") .. "\n```"
@@ -33,6 +35,8 @@ AddEventHandler("OnPlayerConnectFull", function (event)
     local player = GetPlayer(playerid)
     if not player or not player:IsValid() then return end
     if player:IsFakeClient() then return end
+
+    if not player:CBasePlayerController():IsValid() then return end
 
     if config:Fetch("discord-logs.discord-logs.connectlogs") then
         local embed = Embed.new()
@@ -54,6 +58,7 @@ AddEventHandler("OnClientDisconnect", function (event, playerid)
     if not player then return end
     if player:IsFakeClient() then return end
 
+    if not player:CBasePlayerController():IsValid() then return end
 
     if config:Fetch("discord-logs.discord-logs.disconnectlogs") then
         local embed = Embed.new()
