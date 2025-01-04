@@ -29,6 +29,10 @@
 
 - After installing the plugin, you should add your webhooks in `addons/swiftly/configs/discord-logs/discord-logs.json`
 
+### Credits ✨
+
+- Embed and Webhook lib was made by [@m3ntor](https://github.com/m3ntorsky)
+
 ### Creating A Pull Request 😃
 
 1. Fork the Project
