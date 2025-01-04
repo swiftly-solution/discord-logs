@@ -6,7 +6,7 @@
   <h3 align="center">[Swiftly] Discord Logs</h3>
 
   <p align="center">
-    A simple plugin for Swiftly that balances the teams.
+    A simple plugin for Swiftly that integrates basic discord logs.
     <br/>
   </p>
 </p>
