@@ -1,0 +1,57 @@
+{
+  "logs": {
+    "connectlog": {
+      "title": "Player Connected",
+      "color": 3066993,
+      "fields": [
+        {
+          "name": "Player Name",
+          "value": "{player_name}",
+          "inline": true
+        },
+        {
+          "name": "Steam ID",
+          "value": "{steam_id}",
+          "inline": true
+        }
+      ]
+    },
+    "disconnectlog": {
+      "title": "Player Disconnected",
+      "color": 15158332,
+      "fields": [
+        {
+          "name": "Player Name",
+          "value": "{player_name}",
+          "inline": true
+        },
+        {
+          "name": "Steam ID",
+          "value": "{steam_id}",
+          "inline": true
+        }
+      ]
+    },
+    "general_log": {
+      "title": "General LOG",
+      "color": 15158332,
+      "fields": [
+        {
+          "name": "Map Name: ",
+          "value": "{map_name}",
+          "inline": true
+        },
+        {
+          "name": "Total Players:",
+          "value": "{total_players}",
+          "inline": true
+        },
+        {
+          "name": "Players: ",
+          "value": "{players}",
+          "inline": false
+        }
+      ]
+    }
+  }
+}

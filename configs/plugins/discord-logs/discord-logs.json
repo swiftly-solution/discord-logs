@@ -1,0 +1,10 @@
+{
+    "connectlogs": true,
+    "disconnectlogs": true,
+    "general_log": true,
+    "general_log_interval": 600000,
+    "chatlogs": true,
+    "connectwebhook": "",
+    "disconnectwebhook": "",
+    "general_log_webhook": ""
+}
